@@ -1,0 +1,51 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode",
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDragAndDrop": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "scminput": false,
+        "markdown": true
+    },
+    "[plantuml]": {
+        "editor.defaultFormatter": "jebbs.plantuml"
+    },
+    "workbench.startupEditor": "none",
+    "workbench.editor.empty.hint": "hidden",
+    "[php]": {
+        "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+    },
+    "cSpell.language": "fr,en",
+    "cSpell.languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "fr",
+            "caseSensitive": false
+        }
+    ],
+    "php.highlight-todo.enable": false,
+    "hediet.vscode-drawio.resizeImages": null,
+    "markdown-preview-enhanced.previewTheme": "atom-dark.css",
+    "markdown-preview-enhanced.codeBlockTheme": "atom-light.css",
+    "[sql]": {
+        "editor.defaultFormatter": "cweijan.vscode-database-client2"
+    }
+}
