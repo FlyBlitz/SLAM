@@ -1,0 +1,5 @@
+1. Pour une station donnée, il y a 0 ou plusieurs observations
+2. Pour un drone donné, il y a une et une seule station
+3. Pour un drone donné, il y a 0 ou plusieurs observations
+4. Pour une observation donnée, il y a un et un seul drone
+5. De station il faut passer par drone puis observation

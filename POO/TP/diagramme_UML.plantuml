@@ -1,0 +1,43 @@
+@startuml
+
+class Station {
+    -nom: string
+    -zoneMaritime: string
+    +__construct(nom: string, zoneMaritime: string)
+    +getNom(): string
+    +getZoneMaritime(): string
+    +getDrones(): array
+    +getNombreDrones(): int
+    +ajouterDrone(drone: Drone): bool
+}
+
+class Drone {
+    -identifiant: string
+    -profondeurMaximale: int
+    +__construct(identifiant: string, profondeurMaximale: int, station: Station)
+    +getIdentifiant(): string
+    +getProfondeurMaximale(): int
+    +getStation(): Station
+    +getObservations(): array
+    +getNombreObservations(): int
+    +ajouterObservation(observation: Observation): bool
+    +getPlusGrandeProfondeurObservee(): ?int
+}
+
+class Observation {
+    -description: string
+    -profondeur: int
+    -interetScientifique: int
+    +__construct(description: string, profondeur: int, interetScientifique: int, drone: Drone)
+    +getDescription(): string
+    +getProfondeur(): int
+    +getInteretScientifique(): int
+    +getDrone(): Drone
+}
+
+Station "1" --> "0..*" Drone : getDrones()
+Drone "0..*" --> "1" Station : getStation()
+Drone "1" --> "0..*" Observation : getObservations()
+Observation "0..*" --> "1" Drone : getDrone()
+
+@enduml
